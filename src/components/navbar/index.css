@@ -1,0 +1,31 @@
+.navbarContainer {
+
+
+}
+
+.navbarContainer .name {
+  font-size: 40px;
+  background-color: rgb(37, 35, 35);
+  color: white;
+  padding: 10px;
+  margin-bottom: 1px;
+}
+
+.navbarContainer .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  background-color: rgb(37, 35, 35);
+  color: white;
+  }
+
+.navbarContainer .nav-menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0px;
+}
+
+.navbarContainer .nav-menu li {
+  margin: 0px 10px;
+}
