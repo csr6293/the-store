@@ -2,20 +2,33 @@ import { API_URL } from '../../utils/constants';
 
 //TODO: Create a func to handle api request with proper error handling.
 
+function apiHandler(url, data = {}) {
+  try {
+    const data = fetch(url)
+      .then(resp => resp)
+      .then(data => data.json());
+
+      console.log('data', data)
+
+  } catch (error) {
+    return error;
+  }
+}
+
 export function getProducts() {
   const URL = `${API_URL}/products`;
 
-  return fetch(URL);
+  return apiHandler(URL);
 }
 
 export function getProduct(id) {
   const URL = `${API_URL}/products/${id}`;
 
-  return fetch(URL);
+  return apiHandler(URL);
 }
 
 export function searchProducts(query) {
-  const URL = `${API_URL}/products/search?q=${query}`
+  const URL = `${API_URL}/products/search?q=${query}`;
 
-  return fetch(URL);
+  return apiHandler(URL);
 }
