@@ -4,12 +4,7 @@ import { API_URL } from '../../utils/constants';
 
 function apiHandler(url, data = {}) {
   try {
-    const data = fetch(url)
-      .then(resp => resp)
-      .then(data => data.json());
-
-      console.log('data', data)
-
+    return fetch(url).then(resp => resp.json());
   } catch (error) {
     return error;
   }

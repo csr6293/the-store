@@ -1,5 +1,6 @@
 import React from 'react';
 
+import './index.css';
 import SideBar from './sidebar';
 import { getProducts } from '../../services/api';
 
@@ -7,19 +8,19 @@ const Dashboard = () => {
 
   const [products, setProducts] = React.useState([]);
 
+  //TODO: Handle error properly, show message in toaster.
   React.useEffect(() => {
-    const products = getProducts();
-
-    console.log('pform indexp', products)
-
-    setProducts(products);
+    getProducts()
+      .then(data => setProducts(data))
+      .catch(err => console.log('eee', err));
   }, []);
 
   return (
-    <div>
+    <div className='products'>
       {products?.products?.map((product) => (
-        <div>
+        <div className='product'>
           <div>{product.title}</div>
+          <div>{product.brand}</div>
         </div>
       ))}
     </div>
