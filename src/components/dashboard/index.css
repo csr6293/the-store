@@ -1,7 +1,11 @@
 .products {
   display: flex;
+  flex-wrap: wrap;
+
 }
 
 .products .product {
   background-color: red;
+  padding: 20px;
+  margin: 5px;
 }
