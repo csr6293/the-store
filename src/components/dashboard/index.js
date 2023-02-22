@@ -19,8 +19,14 @@ const Dashboard = () => {
     <div className='products'>
       {products?.products?.map((product) => (
         <div className='product'>
-          <div>{product.title}</div>
-          <div>{product.brand}</div>
+          <img src={product?.images[0]} alt='product' />
+          <div style={{
+            padding: '20px'
+          }}>
+            <h3>{product.title}</h3>
+            <p className='price'>$ {product.price}</p>
+            <div>{product.brand}</div>
+          </div>
         </div>
       ))}
     </div>
