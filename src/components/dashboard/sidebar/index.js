@@ -6,9 +6,11 @@ import Search from './Search';
 const SideBar = () => {
 
   return (
-    <div>
-      <Filter />
+    <div style={{
+      marginTop: '20px'
+    }}>
       <Search />
+      <Filter />
     </div>
   )
 }
