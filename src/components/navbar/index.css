@@ -1,14 +1,27 @@
 .navbarContainer {
-
+  cursor: pointer;
 
 }
 
 .navbarContainer .name {
+  display: flex;
+  justify-content: space-between;
   font-size: 40px;
   background-color: rgb(37, 35, 35);
   color: white;
   padding: 10px;
   margin-bottom: 1px;
+}
+
+.navbarContainer .name .user-options {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 20px;
+  align-items: center;
+}
+
+.navbarContainer .name .user-options div {
+  margin: 0 10px;
 }
 
 .navbarContainer .navbar {
@@ -18,7 +31,7 @@
   font-size: 20px;
   background-color: rgb(37, 35, 35);
   color: white;
-  }
+}
 
 .navbarContainer .nav-menu {
   display: flex;
@@ -28,4 +41,12 @@
 
 .navbarContainer .nav-menu li {
   margin: 0px 10px;
+}
+
+.search-bar {
+  height: 40px;
+  width: 300px;
+  border-radius: 20px;
+  padding: 0 10px;
+  margin-right: 10px;
 }

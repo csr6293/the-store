@@ -4,3 +4,7 @@
   padding: 0; /* Remove padding */
   margin: 0; /* Remove margins */
 }
+
+.no-bullets li {
+  margin: 5px 0;
+}
