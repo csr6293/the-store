@@ -1,12 +1,14 @@
 import React from 'react';
 
+import './filter.css';
+
 const Filter = () => {
 
   return (
     <div>
       <div>
         <h3>Brands</h3>
-        <ul>
+        <ul className='no-bullets'>
           <li>Apple</li>
           <li>Samsung</li>
           <li>Sony</li>
@@ -17,7 +19,7 @@ const Filter = () => {
 
       <div>
         <h3>SORT</h3>
-        <ul>
+        <ul className='no-bullets'>
           <li>Latest arrivals</li>
           <li>Trending</li>
           <li>Price: Low to high</li>
