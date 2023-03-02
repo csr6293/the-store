@@ -6,17 +6,15 @@ const ProductDetail = () => {
 
   React.useEffect(() => {
 
-  })
+  });
 
-  console.log("ccc")
   return (
     <div>
-
-      <div></div>
+      <div>This is product detail</div>
       <div></div>
       <div></div>
     </div>
-  )
-}
+  );
+};
 
 export default ProductDetail;
