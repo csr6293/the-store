@@ -8,8 +8,15 @@
   text-align: center;
   max-width: 300px;
   margin: 20px;
+  cursor: pointer;
   box-shadow: 0 2px 2px 0 rgba(0.2, 0.2, 0.2, 0.2);
+
 }
+
+.products .product:hover {
+  box-shadow: 0 10px 20px 15px rgb(0 0 0 / 20%);
+}
+
 
 .products .product img {
   height: 180px;

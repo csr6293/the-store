@@ -1,10 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Product = (props) => {
   const {product} = props;
+  const navigate = useNavigate();
 
   return (
-    <div className='product'>
+    <div className='product' onClick={() => navigate(`/products/${222}`)}>
       <img src={product?.images[0]} alt='product' />
       <div style={{
         padding: '20px'
