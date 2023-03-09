@@ -19,7 +19,9 @@ const ProductDetail = () => {
 
   return (
     <div className="product-details">
-      <div>
+      <div style={{
+        width: '30%'
+      }}>
         <h3>{product.title}</h3>
         <h4>{product.brand}</h4>
         <h4>{product.category}</h4>
@@ -27,7 +29,9 @@ const ProductDetail = () => {
         <p>{product.description}</p>
       </div>
       <div>
-        <img src={product?.images?.[0]} alt={`Pic of id: ${id}`} />
+        <img style={{
+          marginTop: '20px'
+        }} src={product?.images?.[0]} alt={`Pic of id: ${id}`} />
       </div>
       <div>
         <h3>${product.price}</h3>
