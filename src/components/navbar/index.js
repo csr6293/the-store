@@ -6,14 +6,14 @@ import './index.css';
 const NavBar = () => {
   const navigate = useNavigate();
 
-  const navigateToContactUs = () => {
-    return navigate('/contact-us');
+  const navigateTo = (url) => {
+    return navigate(url);
   }
 
   return (
     <div className='navbarContainer'>
       <div className='name'>
-        <div>The Store</div>
+        <div onClick={() => navigateTo('/')}>The Store</div>
         <div className='user-options'>
           <div>Login</div>
           <div>Wishlist</div>
@@ -27,7 +27,7 @@ const NavBar = () => {
           <li>Offers</li>
           <li>Sale</li>
           <li>About us</li>
-          <li onClick={navigateToContactUs}>Contact us</li>
+          <li onClick={() => navigateTo('/contact-us')}>Contact us</li>
         </ul>
         <div>
           <input className='search-bar' type={'text'} placeholder="Search..." />
