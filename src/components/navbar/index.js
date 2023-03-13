@@ -1,8 +1,15 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import './index.css';
 
 const NavBar = () => {
+  const navigate = useNavigate();
+
+  const navigateToContactUs = () => {
+    return navigate('/contact-us');
+  }
+
   return (
     <div className='navbarContainer'>
       <div className='name'>
@@ -20,7 +27,7 @@ const NavBar = () => {
           <li>Offers</li>
           <li>Sale</li>
           <li>About us</li>
-          <li>Contact us</li>
+          <li onClick={navigateToContactUs}>Contact us</li>
         </ul>
         <div>
           <input className='search-bar' type={'text'} placeholder="Search..." />
