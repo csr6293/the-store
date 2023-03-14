@@ -13,6 +13,10 @@
   margin-bottom: 1px;
 }
 
+.navbarContainer #name:hover {
+  text-shadow: #FC0 5px 5px 20px;
+}
+
 .navbarContainer .name .user-options {
   display: flex;
   flex-direction: row-reverse;
@@ -41,6 +45,10 @@
 
 .navbarContainer .nav-menu li {
   margin: 0px 10px;
+}
+
+.navbarContainer .nav-menu li:hover {
+  text-shadow: #FC0 5px 5px 20px;
 }
 
 .search-bar {
