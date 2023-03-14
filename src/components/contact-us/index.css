@@ -18,15 +18,22 @@
 }
 
 .contact-form input {
-  width: 95%;
-  height: 35px;
+  height: 40px;
+  text-indent: 10px;
+  border-radius: 5px;
+  border-style: none;
 }
 
 .contact-form button {
-  width: 95%;
   height: 50px;
+  background-color: rgb(245, 128, 140);
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  border-style: none;
+  cursor: pointer;
 }
 
 .contact-form >*:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }

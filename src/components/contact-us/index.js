@@ -35,7 +35,7 @@ const ContactUs = () => {
         <input type={'email'} placeholder='Your Email' />
         <input type={'text'} placeholder='Your Phone' />
         <input type={'text'} placeholder='Your Message'/>
-        <button type='button'>Submit</button>
+        <button type='button'>Submit Message</button>
       </div>
     </div>
   )
