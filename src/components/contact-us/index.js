@@ -22,7 +22,7 @@ const ContactUs = () => {
 
         <div>
           <h2>Phone Number</h2>
-          <p>(+1)412-883-7098</p>
+          <p>(+1) 412-883-7098</p>
         </div>
 
         <div>
