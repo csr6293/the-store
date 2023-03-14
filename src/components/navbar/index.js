@@ -23,7 +23,7 @@ const NavBar = () => {
       <div className='navbar'>
         <ul className='nav-menu'>
           <li>Products</li>
-          <li>Store Locator</li>
+          <li onClick={() => navigateTo('/locations')}>Store Locator</li>
           <li>Offers</li>
           <li>Sale</li>
           <li>About us</li>

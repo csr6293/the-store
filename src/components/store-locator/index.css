@@ -1,0 +1,48 @@
+.wrapper {
+}
+
+.wrapper .title {
+  margin: 0 40px;
+}
+
+.wrapper .title h2 {
+  background-color: orange;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+.wrapper .title input {
+  height: 40px;
+    border: 2px solid dimgrey;
+    border-radius: 5px;
+    flex: 1;
+    font-size: 18px;
+    text-indent: 10px;
+}
+
+.wrapper .title {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .locations-data {
+  display: flex;
+  padding: 0 20px 0 40px;
+}
+
+.locations-data .list {
+  width: 50%;
+}
+
+.wrapper .img-wrapper {
+  width: 50%;
+  margin: 20px;
+  border: 5px solid lightgrey;
+  border-radius: 5px;
+}
+
+.wrapper .img-wrapper img {
+  height: 100%;
+  width: 100%;
+}
