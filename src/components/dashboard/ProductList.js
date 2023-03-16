@@ -2,25 +2,18 @@ import React from 'react';
 
 import './index.css';
 import Product from './Product';
-import { getProducts } from '../../services/api';
 
-const Dashboard = () => {
-  const [products, setProducts] = React.useState([]);
+const ProductList = (props) => {
 
-  //TODO: Handle error properly, show message in toaster.
-  React.useEffect(() => {
-    getProducts()
-      .then(data => setProducts(data))
-      .catch(err => console.log('err:', err));
-  }, []);
+  const {products} = props;
 
   return (
     <>
-      {products?.products?.map((product) => (
+      {products?.map((product) => (
         <Product product={product} />
       ))}
     </>
   );
 };
 
-export default Dashboard;
+export default ProductList;
