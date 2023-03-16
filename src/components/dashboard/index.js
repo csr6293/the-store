@@ -2,13 +2,17 @@ import React from 'react';
 
 import './index.css';
 import ProductList from './ProductList';
+import SideBar from './sidebar';
 
 const Dashboard = () => {
 
   return (
-    <div className='products'>
-      <ProductList />
-    </div>
+    <>
+      <SideBar />
+      <div className='products'>
+        <ProductList />
+      </div>
+    </>
   );
 };
 
