@@ -5,7 +5,7 @@ import Product from './Product';
 
 const ProductList = (props) => {
 
-  const {products} = props;
+  const { products } = props;
 
   return (
     <>

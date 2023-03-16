@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './filter.css';
+import { filterByTag } from '../../../utils/functions'
 
 const Filter = () => {
 
@@ -22,7 +23,7 @@ const Filter = () => {
         <ul className='no-bullets'>
           <li>Latest arrivals</li>
           <li>Trending</li>
-          <li>Price: Low to high</li>
+          <li >Price: Low to high</li>
           <li>Price: High to low</li>
           <li>Sale: Low to high</li>
           <li>Sale: High to low</li>

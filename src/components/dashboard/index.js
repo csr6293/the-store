@@ -18,7 +18,7 @@ const Dashboard = () => {
 
   return (
     <>
-      <SideBar />
+      <SideBar  />
       <div className='products'>
         <ProductList products={products} />
       </div>

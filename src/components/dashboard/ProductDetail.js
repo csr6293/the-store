@@ -7,6 +7,7 @@ import { getProduct } from '../../services/api';
 const ProductDetail = () => {
   const { id } = useParams();
   const [product, setProduct] = React.useState({});
+  const [wishlist, setWishlist] = React.useState([]);
 
   React.useEffect(() => {
 
@@ -15,7 +16,9 @@ const ProductDetail = () => {
       .catch(err => console.log(err));
   },[id]);
 
-  console.log('product', product);
+  const addToWishlist = (newWishlist) => {
+    setWishlist((prevWishlist) => [...prevWishlist, newWishlist]);
+  }
 
   return (
     <div className="product-details">
@@ -37,7 +40,7 @@ const ProductDetail = () => {
         <h3>${product.price}</h3>
         <div>
           <button>Add to cart</button>
-          <button>Wishlist</button>
+          <button onClick={() => addToWishlist(product)} >Wishlist</button>
         </div>
       </div>
     </div>
