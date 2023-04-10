@@ -18,6 +18,13 @@ const ProductDetail = () => {
 
   const addToWishlist = (newWishlist) => {
     setWishlist((prevWishlist) => [...prevWishlist, newWishlist]);
+
+    addToCart(wishlist);
+  }
+
+  const addToCart = (products) => {
+    // check whether the item has already added.
+    localStorage.setItem('products', JSON.stringify(products));
   }
 
   return (
