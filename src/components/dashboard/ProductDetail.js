@@ -19,12 +19,14 @@ const ProductDetail = () => {
   const addToWishlist = (newWishlist) => {
     setWishlist((prevWishlist) => [...prevWishlist, newWishlist]);
 
-    addToCart(wishlist);
+    localStorage.setItem('wishlist', JSON.stringify(wishlist));
+    window.alert("Added to wishlist")
   }
 
   const addToCart = (products) => {
     // check whether the item has already added.
     localStorage.setItem('products', JSON.stringify(products));
+    window.alert("Added to cart!")
   }
 
   return (
@@ -46,7 +48,7 @@ const ProductDetail = () => {
       <div>
         <h3>${product.price}</h3>
         <div>
-          <button>Add to cart</button>
+          <button onClick={() => addToCart(product)}>Add to cart</button>
           <button onClick={() => addToWishlist(product)} >Wishlist</button>
         </div>
       </div>
