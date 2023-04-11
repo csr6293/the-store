@@ -16,8 +16,8 @@ const NavBar = () => {
         <div id='name' onClick={() => navigateTo('/')}>The Store</div>
         <div className='user-options'>
           <div>Login</div>
-          <div>Wishlist</div>
-          <div>Shopping Bag</div>
+          <div onClick={() => navigateTo('/wishlist')}>Wishlist</div>
+          <div onClick={() => navigateTo('/cart')}>Shopping Bag</div>
         </div>
       </div>
       <div className='navbar'>
