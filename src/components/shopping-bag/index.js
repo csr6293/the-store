@@ -24,19 +24,29 @@ const ShoppingBag = () => {
         <h2>Your Shopping Cart</h2>
         <div>
           {cartItems.map((item) => {
-            return <div>
-              <img src={item.images?.[0]} alt="pic" height={'100px'} width={'100px'} />
+            return <div style={{
+              display: 'flex',
+              justifyContent: 'space-around'
+            }}>
               <div style={{
                 display: 'flex'
               }}>
+                <img src={item.images?.[0]} alt="pic" height={'100px'} width={'100px'} />
+                <div>
                 <h5>{item.title}</h5>
                 <h6>{item.description}</h6>
+                  </div>
+              </div>
+              <div style={{
+                display: 'flex'
+              }}>
+
                 <h5>{item.price}</h5>
               </div>
               <div>
                 remove
               </div>
-            </div>
+            </div>;
           })}
 
         </div>
